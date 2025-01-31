@@ -1,0 +1,23 @@
+File file = new File("d://testfile//test.java");
+
+file.createNewFile();
+
+file.mkdir();
+
+file.mkdirs();//创建必须而不存在的文件夹
+
+file.isDirectory();
+
+file.isFile();
+
+file.exists();
+
+file.getAbsoluteFile();
+
+file.getPath();
+
+file.getName();
+
+file.list();//返回String数组
+
+file.listFiles();//返回File数组
