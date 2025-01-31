@@ -21,3 +21,5 @@ file.getName();
 file.list();//返回String数组
 
 file.listFiles();//返回File数组
+
+file.delete();//在删除目录时记得删除所有目录下的文件
