@@ -1,0 +1,23 @@
+# 先回答一个问题，什么是mvc
+mvc是三层架构：
+model，模型：那么什么是模型呢？模型就是数据
+view，视图：什么是视图呢？就是网页，使用网页展示模型中的数据
+controller，控制器：什么是控制器呢？将不同模型中的数据投射到不同的视图上
+
+在nosql崛起的情况下，模型层被拆分为服务层和模型层
+模型层还是一样连接数据库
+服务层连接nosql
+
+#如何使用mvc
+在idea中选择mvc，idea会帮我们自动下载好需要的jar包
+接下来修改的是web.xml
+
+<servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+</servlet-mapping>
+
+修改<servlet-mapping>中的<url-pattern>为'/'
+那么什么是<servlet>呢？ Servlet 是 Java Web 开发的核心组件，用于处理客户端（如浏览器）的请求并生成动态响应。
+servlet-name是servlet的唯一标识
+而url-pattern是匹配规则，当用户的url格式符合定义的格式的时候，则转发到对应的servlet
